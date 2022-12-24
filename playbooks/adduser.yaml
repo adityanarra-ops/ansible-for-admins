@@ -1,0 +1,6 @@
+---
+- name: adding user into the server
+  hosts: localhost
+  tasks:
+   - name: adduser into localhosts
+     user: name=readlonly state=present home=/home/readonly
